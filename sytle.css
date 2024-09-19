@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #87ceeb; /* Sky blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .expense-tracker {
+    background-color: #fff8dc; /* Soft beige */
+    padding: 30px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .expense-tracker:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input[type="text"], input[type="number"] {
+    padding: 12px;
+    border: 2px solid #ffd700; /* Bright golden */
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #ff8c00; /* Brighter orange */
+    outline: none;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #32cd32; /* Bright lime green */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #228b22; /* Darker green */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 0;
+  }
+  
+  li {
+    background-color: #fffacd; /* Light yellow */
+    padding: 12px;
+    border: 1px solid #ffd700; /* Bright golden */
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  li:hover {
+    background-color: #ffefd5; /* Light peach puff */
+  }
+  
+  .delete-btn {
+    background-color: #ff4500; /* Bright red-orange */
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff6347; /* Softer tomato red */
+  }
+  
+  .total-amount {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .chart-container {
+    width: 400px;
+    background-color: #fff8dc; /* Soft beige */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  canvas {
+    max-width: 100%;
+    height: 300px;
+  }
+  
